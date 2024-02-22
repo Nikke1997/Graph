@@ -161,6 +161,7 @@ const resolvers = {
         return {
           name: author.name,
           bookCount,
+          born: author.born,
         };
       });
     },
