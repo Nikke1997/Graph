@@ -37,6 +37,7 @@ const NewBook = () => {
 
   return (
     <div>
+      <br />
       <form onSubmit={submit}>
         <div>
           title
@@ -45,6 +46,7 @@ const NewBook = () => {
             onChange={({ target }) => setTitle(target.value)}
           />
         </div>
+        <br />
         <div>
           author
           <input
@@ -52,6 +54,7 @@ const NewBook = () => {
             onChange={({ target }) => setAuthor(target.value)}
           />
         </div>
+        <br />
         <div>
           published
           <input
@@ -60,6 +63,7 @@ const NewBook = () => {
             onChange={({ target }) => setPublished(target.value)}
           />
         </div>
+        <br />
         <div>
           <input
             value={genre}
@@ -69,7 +73,9 @@ const NewBook = () => {
             add genre
           </button>
         </div>
+        <br />
         <div>genres: {genres.join(' ')}</div>
+        <br />
         <button type="submit">create book</button>
       </form>
     </div>

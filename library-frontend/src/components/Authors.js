@@ -47,14 +47,14 @@ if (result.loading) {
         <tbody>
           <tr>
             <th></th>
-            <th>born</th>
-            <th>books</th>
+            <th style={{ padding: '8px'}}>born</th>
+            <th style={{ padding: '8px'}}>books</th>
           </tr>
           {result.data.allAuthors.map((a) => (
             <tr key={a.name}>
-              <td>{a.name}</td>
-              <td>{a.born}</td>
-              <td>{a.bookCount}</td>
+              <td style={{ padding: '8px'}}>{a.name}</td>
+              <td style={{ padding: '8px'}}>{a.born}</td>
+              <td style={{ padding: '8px'}}>{a.bookCount}</td>
             </tr>
           ))}
         </tbody>
@@ -65,6 +65,7 @@ if (result.loading) {
           <div>
             name
             <select value={name} onChange={(e) => setName(e.target.value)}>
+              <option value="">Select author</option>
                       {options}
               </select>
           </div>

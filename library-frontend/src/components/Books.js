@@ -18,14 +18,14 @@ const Books = () => {
         <tbody>
           <tr>
             <th></th>
-            <th>author</th>
-            <th>published</th>
+            <th style={{ padding: '8px' }}>author</th>
+            <th style={{ padding: '8px'}}>published</th>
           </tr>
           {result.data.allBooks.map((a) => (
             <tr key={a.title}>
-              <td>{a.title}</td>
-              <td>{a.author}</td>
-              <td>{a.published}</td>
+              <td style={{ padding: '8px' }}>{a.title}</td>
+              <td style={{ padding: '8px' }}>{a.author.name}</td>
+              <td style={{ padding: '8px' }}>{a.published}</td>
             </tr>
           ))}
         </tbody>
